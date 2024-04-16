@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    
+      @for (item of datos; track item.id) {
+        <ion-title>
+          {{item.title}}
+        </ion-title>
+      }
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Menú
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button>Crear solicitud</ion-button>
+      <ion-button>Editar solicitud</ion-button>
+      <ion-button>Consultar solicitud y Sincronizar solicitud</ion-button>
+      <ion-button>Sincronizar solicitud</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
